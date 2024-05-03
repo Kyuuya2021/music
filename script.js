@@ -1,14 +1,5 @@
-/*
-design by Voicu Apostol.
-design: https://dribbble.com/shots/3533847-Mini-Music-Player
-I can't find any open music api or mp3 api so i have to download all musics as mp3 file.
-You can fork on github: https://github.com/muhammederdem/mini-player
-*/
-
 new Vue({
   el: "#app",
-/* it is linked to the element th ID #app in HTML */
-
   data() {
     return {
       audio: null,
@@ -19,11 +10,11 @@ new Vue({
       isTimerPlaying: false,
       tracks: [
         {
-          name: "タイムマシン",
-          artist: "SEKAI NO OWARI",
-          cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/2.jpg",
-          source: "https://github.com/muhammed/mini-player/blob/master/mp3/1.mp3",
-          url: "https://youtu.be/PSG9SMj0ACE?si=-QNUpT1pMLMa7lKX",
+          name: "Mekanın Sahibi",
+          artist: "Norm Ender",
+          cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/1.jpg",
+          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/1.mp3",
+          url: "https://www.youtube.com/watch?v=z3wAjJXbYzA",
           favorited: false
         },
         {
