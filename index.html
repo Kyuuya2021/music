@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>- ミュージックプレイヤー - </title>
-  <!--browser title -->
-  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
-  <!--setting font from Google fonts-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'><link rel="stylesheet" href="./style.css">
-  <!--display opitimizition-->
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="wrapper" id="app">
-<!--add an id of "app"-->>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Mini Player</title>
+  </head>
+  <body>
+    <div class="wrapper" id="app">
       <div class="player">
         <div class="player__top">
           <div class="player-cover">
             <transition-group :name="transitionName">
-            <!--implument animation when album cover hanges using "transition group" -->
                 <div class="player-cover__item" v-if="$index === currentTrackIndex" :style="{ backgroundImage: `url(${track.cover})` }"  v-for="(track, $index) in tracks" :key="$index"></div>
             </transition-group>
           </div>
@@ -120,8 +123,7 @@
         </symbol>
       </defs>
     </svg>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script><script  src="./script.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
